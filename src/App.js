@@ -32,24 +32,10 @@ function App() {
                userLocation={userLocation}
                setUserLocation={setUserLocation}
                image={image}
-               setImage={setImage} />
+               setImage={setImage}
+               register={register}
+               setRegister={setRegister} />
          ) : (<Login register={register} setRegister={setRegister} />)}
-         {/* <Register /> */}
-         {/* <Register
-            userName={userName}
-            setUserName={setUserName}
-            userLastName={userLastName}
-            setUserLastName={setUserLastName}
-            userPassword={userPassword}
-            setUserPassword={setUserPassword}
-            userEmail={userEmail}
-            setUserEmail={setUserEmail}
-            userLocation={userLocation}
-            setUserLocation={setUserLocation}
-            image={image}
-            setImage={setImage} /> */}
-         {/* <Login /> */}
-         {/* <Main /> */}
       </div>
    );
 }

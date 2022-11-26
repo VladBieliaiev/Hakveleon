@@ -38,7 +38,7 @@ export const Login = ({ register, setRegister }) => {
       <div className="containerForm">
 
          {success ? (
-            <Main />
+            <Main setRegister={setRegister} />
          ) : (
             <div>
                <form className="userForm">

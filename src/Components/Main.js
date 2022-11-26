@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
 
-export default function Main() {
+export default function Main({ setRegister }) {
    const [profile, setProfile] = useState();
    const [users, setUser] = useState()
 
@@ -43,6 +43,12 @@ export default function Main() {
                      <p>{profile.data.lastName}</p>
                      <p>{profile.data.email}</p>
                      <p>{profile.data.location}</p>
+                     <button
+                        className="formBtn"
+                        onClick={() => setRegister(prev => !prev)}
+                     >
+                        Back
+                     </button>
                   </div>
                   <div className="usersBlocksGroup">
                      {users.map(i => <div className="usersBlock">

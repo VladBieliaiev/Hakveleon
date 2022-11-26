@@ -3,15 +3,9 @@ import { Upload } from "upload-js";
 import axios from 'axios';
 
 
-export const Register = ({ userName, setUserName, userLastName, setUserLastName, userPassword, setUserPassword, userEmail, setUserEmail, userLocation, setUserLocation, image, setImage }) => {
-   // const [userName, setUserName] = useState();
-   // const [userLastName, setUserLastName] = useState()
-   // const [userPassword, setUserPassword] = useState()
-   // const [userEmail, setUserEmail] = useState()
-   // const [userLocation, setUserLocation] = useState()
-   // const [image, setImage] = useState('')
+export const Register = ({ userName, setUserName, userLastName, setUserLastName, userPassword, setUserPassword, userEmail, setUserEmail, userLocation, setUserLocation, image, setImage, setRegister }) => {
+
    const [success, setSucess] = useState(false)
-   // const [json, setJson] = useState()
 
 
    const handleSubmit = async e => {
@@ -51,7 +45,7 @@ export const Register = ({ userName, setUserName, userLastName, setUserLastName,
 
 
    return (
-      <div className="containerForm">
+      <div className="containerForm" style={{ display: "flex", flexDirection: "column" }}>
          <form className="userForm">
             {success ? (
                <div>
@@ -120,6 +114,12 @@ export const Register = ({ userName, setUserName, userLastName, setUserLastName,
                </>
             )}
          </form>
+         <button
+            className="formBtn"
+            onClick={() => setRegister(prev => !prev)}
+         >
+            Back
+         </button>
       </div >
    )
 }
