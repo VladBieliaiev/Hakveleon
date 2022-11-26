@@ -1,0 +1,144 @@
+:root{
+   --background-color-body:#f7f7f7;
+   --background-color-userForm:#d1e4ff;
+   --primary-color:#282c5b;
+   --secondary-color:#50a4d1;
+}
+
+.containerForm {
+   background-color: var(--background-color-body);
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.userForm {
+   background-color: var(--background-color-userForm);
+   display: flex;
+   flex-direction: column;
+   font-family: 'Roboto', sans-serif;
+   color: var(--primary-color);
+   padding: 2rem ;
+   border-radius: 15px;
+   min-width: 21rem;
+   min-height: 19rem;
+   box-shadow: 0px 0px 10px #a0b1bb;
+}
+
+.userForm input{
+   border-radius: 10px;
+   border: none;
+   height: 1.7rem;
+   padding: 0.2rem 0.5rem;
+}
+
+
+
+.formTitle{
+   font-size: 2.5rem;
+   font-weight: 800;
+   padding: 1rem;
+}
+
+.formLabel{
+   font-size: 1.5rem;
+   padding: 1rem 0;
+}
+
+.inputFile{
+   max-width: 100%;
+   color: #444;
+   padding: 10px 0;
+   border-radius: 10px;
+}
+
+.inputFile::file-selector-button {
+   border: none;
+   padding: 10px;
+   border-radius: 15px;
+ }
+
+.formBtn{
+   border: none;
+   padding: 0.5rem;
+   border-radius: 15px;
+   background-color: #494f8a;
+   color: #ffff;
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.5rem;
+   /* height: 2rem;
+   width: 10rem; */
+   margin: 1.5rem 0 0;
+}
+
+.profileImg{
+   /* width: 10rem;
+   height: 10rem; */
+}
+
+
+
+
+
+
+
+
+
+/* ---------MAIN PAGE --------------- */
+
+.containerMain{
+	margin: 0px auto;
+   height: 100vh;
+}
+
+.mainPage{
+   display: flex;
+   /* justify-content: center; */
+   /* height: 100vh; */
+}
+.userProfile {
+   background-color: var(--background-color-userForm);
+   padding: 1rem;
+   font-family: 'Roboto', sans-serif;
+   color: var(--primary-color);
+   /* height: 100vh; */
+
+}
+.userProfile img{
+   width: 10rem;
+   border-radius: 50px;
+   padding: 1rem;
+}
+.userProfile p{
+   padding: 0.5rem 1rem;
+}
+.usersBlocksGroup{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.usersBlock{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border:1px solid black;
+   margin: 1rem;
+   max-height: 28rem;
+   min-width: 18rem;
+   border-radius: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.usersBlock img{
+   margin: auto;
+   width: 15rem;
+   border-radius: 50px;
+   padding: 1rem;
+}
+
+.usersBlock p{
+   padding: 0.5rem 1rem;
+}

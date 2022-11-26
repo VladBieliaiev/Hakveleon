@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import "./styles/reset.css";
+import { Login } from './Components/Login';
+import { Register } from './Components/Register';
+import Main from "./Components/Main";
+import { useState } from "react";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const [userName, setUserName] = useState()
+   const [userLastName, setUserLastName] = useState()
+   const [userPassword, setUserPassword] = useState()
+   const [userEmail, setUserEmail] = useState()
+   const [userLocation, setUserLocation] = useState()
+   const [image, setImage] = useState('')
+   const [register, setRegister] = useState(false)
+
+
+   return (
+      <div >
+         {register ? (
+            <Register
+               userName={userName}
+               setUserName={setUserName}
+               userLastName={userLastName}
+               setUserLastName={setUserLastName}
+               userPassword={userPassword}
+               setUserPassword={setUserPassword}
+               userEmail={userEmail}
+               setUserEmail={setUserEmail}
+               userLocation={userLocation}
+               setUserLocation={setUserLocation}
+               image={image}
+               setImage={setImage} />
+         ) : (<Login register={register} setRegister={setRegister} />)}
+         {/* <Register /> */}
+         {/* <Register
+            userName={userName}
+            setUserName={setUserName}
+            userLastName={userLastName}
+            setUserLastName={setUserLastName}
+            userPassword={userPassword}
+            setUserPassword={setUserPassword}
+            userEmail={userEmail}
+            setUserEmail={setUserEmail}
+            userLocation={userLocation}
+            setUserLocation={setUserLocation}
+            image={image}
+            setImage={setImage} /> */}
+         {/* <Login /> */}
+         {/* <Main /> */}
+      </div>
+   );
 }
 
 export default App;
