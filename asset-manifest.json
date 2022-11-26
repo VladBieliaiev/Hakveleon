@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Hakveleon/static/css/main.d95ec01f.css",
+    "main.js": "/Hakveleon/static/js/main.ae0da879.js",
+    "static/js/787.3c3f0952.chunk.js": "/Hakveleon/static/js/787.3c3f0952.chunk.js",
+    "index.html": "/Hakveleon/index.html",
+    "main.d95ec01f.css.map": "/Hakveleon/static/css/main.d95ec01f.css.map",
+    "main.ae0da879.js.map": "/Hakveleon/static/js/main.ae0da879.js.map",
+    "787.3c3f0952.chunk.js.map": "/Hakveleon/static/js/787.3c3f0952.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d95ec01f.css",
+    "static/js/main.ae0da879.js"
+  ]
+}
